@@ -23,47 +23,25 @@ const Home = () => {
       <PageSection color={color}>
         <PageWrapper>
           <article>
-            <motion.h1
-              data-text="Looking for a Developer ?"
-              className="intro__text"
-              {...getTransitions(0.1)}
-            >
-              <mark className="mark">Looking for a Developer ?</mark>
-            </motion.h1>
-
             <motion.p {...getTransitions(0.5)}>
-              Hi, I'm Norah, a certified software engineer with a passion
-              for crafting responsive and dynamic interfaces.I'm skilled at
-              Python, JavaScript, React, and Tailwind CSS all of which I use
-              to help create high-quality solutions that solve your
-              problems.{' '}
-              <motion.p {...getTransitions(0.5)}>
-                If you'd like to learn more check out my portfolio{' '}
-                <Link href="/projects" aria-label="Go to Projects Page">
-                  &rarr;
-                </Link>
-              </motion.p>
+              Hi, I'm Norah, a certified software engineer with a passion for crafting
+              responsive and dynamic interfaces. I'm skilled at Python, JavaScript, React,
+              and Tailwind CSS—all of which I use to create high-quality solutions that solve your problems.
             </motion.p>
 
-            <motion.p
-              {...getTransitions(0.5)}
-              style={{ textTransform: 'none' }}
-            >
+            <motion.p {...getTransitions(0.5)}>
+              If you'd like to learn more, check out my portfolio
+              <Link href="/projects" aria-label="Go to Projects Page"> &rarr; </Link>
+            </motion.p>
+
+            <motion.p {...getTransitions(0.5)} style={{ textTransform: 'none' }}>
               Ready to collaborate or discuss a project? Let's connect!
-              <a
-                href="mailto:ksdnorah@gmail.com"
-                style={{ textTransform: 'none', marginLeft: '5px' }}
-              >
+              <a href="mailto:ksdnorah@gmail.com" style={{ textTransform: 'none', marginLeft: '5px' }}>
                 @ksdnorah@gmail.com
               </a>
             </motion.p>
+          </article>
 
-            <br />
-            <motion.div {...getTransitions(0.7)}>
-              <FooterLink goto="/about">See More About Me</FooterLink>
-            </motion.div>
-
-            <br />
         </PageWrapper>
       </PageSection>
     </Layout>
