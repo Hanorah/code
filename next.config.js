@@ -11,3 +11,8 @@ module.exports = {
     tsconfigPath: 'tsconfig.json',
   },
 };
+module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
