@@ -23,6 +23,13 @@ const Home = () => {
       <PageSection color={color}>
         <PageWrapper>
           <article>
+            <motion.h1
+              data-text="Looking for a Developer ?"
+              className="intro__text"
+              {...getTransitions(0.1)}
+            >
+              <mark className="mark">Looking for a Developer ?</mark>
+            </motion.h1>
             <motion.p {...getTransitions(0.5)}>
               Hi, I'm Norah, a certified software engineer with a passion for crafting
               responsive and dynamic interfaces. I'm skilled at Python, JavaScript, React,
